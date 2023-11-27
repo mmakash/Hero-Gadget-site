@@ -1,9 +1,14 @@
 import React from 'react';
+import Header from './Component/Header';
+import { Outlet } from 'react-router';
+import Footer from './Component/Footer';
 
 const App = () => {
   return (
     <div>
-      <h1>Hello App</h1>
+      <Header/>
+      <Outlet/>
+      <Footer/>
     </div>
   );
 };
